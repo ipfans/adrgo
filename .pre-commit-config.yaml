@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/dnephin/pre-commit-golang
+    rev: master
+    hooks:
+      - id: go-fmt
+      - id: go-vet
+      - id: go-imports
+      - id: go-cyclo
+        args: [-over=15]
+      - id: golangci-lint
+      - id: go-critic
+      - id: go-unit-tests
+      - id: go-build
+      - id: go-mod-tidy
+  - repo: git://github.com/Bahjat/pre-commit-golang
+    rev: master
+    hooks:
+      - id: gofumpt
+      - id: go-static-check

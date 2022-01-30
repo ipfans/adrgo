@@ -22,6 +22,5 @@ require (
 	github.com/mattn/go-runewidth v0.0.9 // indirect
 	github.com/russross/blackfriday/v2 v2.0.1 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
-	golang.org/x/sys v0.0.0-20210423082822-04245dca01da // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 )
