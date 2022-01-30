@@ -1,0 +1,14 @@
+ID: ID
+Title: Title
+Status: Status
+LastModified: Last Modified
+Context: Context
+Decision: Decision
+Consequences: Consequences
+proposed: Proposed
+accepted: Accepted
+done: Done
+deprecated: Deprecated
+superseded: Superseded
+timeformat: 02 Jan 2006
+ADRs: Architecture Decision Records

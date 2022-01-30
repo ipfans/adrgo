@@ -1,0 +1,14 @@
+ID: 序号
+Title: 标题
+Status: 状态
+LastModified: 最后更新时间
+Context: 背景
+Decision: 决策
+Consequences: 结果
+proposed: 提案
+accepted: 已接受
+done: 完成
+deprecated: 已弃用
+superseded: 已作废
+timeformat: 2006年1月2日
+ADRs: 架构决策记录
