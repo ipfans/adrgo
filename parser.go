@@ -56,6 +56,8 @@ type Body struct {
 func ParserFile(ctx context.Context, fp string) (body Body, err error) {
 	body.FileName = fp
 
+	md.Parser()
+
 	var b []byte
 	b, err = os.ReadFile(fp)
 	if err != nil {
@@ -64,7 +66,7 @@ func ParserFile(ctx context.Context, fp string) (body Body, err error) {
 	dateRegexp := regexp.MustCompile(`(?m)^` + T("LastModified") + `: (.*)$`)
 	loc := dateRegexp.FindIndex(b)
 	if loc != nil {
-		body.LastUpdate = string(b[loc[0]+13 : loc[1]])
+		body.LastUpdate = string(b[loc[0]+len(T("LastModified"))+2 : loc[1]])
 	}
 	re := regexp.MustCompile(`(?m)^##\x20+(.*)\x20*$`)
 	locs := re.FindAllIndex(b, -1)
