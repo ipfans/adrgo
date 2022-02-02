@@ -1,19 +1,16 @@
 repos:
-  - repo: https://github.com/dnephin/pre-commit-golang
-    rev: master
+  - repo: https://github.com/ipfans/pre-commit-hooks
+    rev: v0.3.0
     hooks:
-      - id: go-fmt
-      - id: go-vet
+      - id: go-fumpt
       - id: go-imports
+      - id: go-vet
       - id: go-cyclo
         args: [-over=15]
       - id: golangci-lint
       - id: go-critic
       - id: go-unit-tests
       - id: go-build
+      - id: go-generate
       - id: go-mod-tidy
-  - repo: git://github.com/Bahjat/pre-commit-golang
-    rev: master
-    hooks:
-      - id: gofumpt
-      - id: go-static-check
+      - id: commit-msg-checker
