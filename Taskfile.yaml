@@ -1,0 +1,16 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - go build -o adrgo.out ./cmd/adr
+
+  test:
+    cmds:
+      - go test -v -race ./...
+
+  log:
+    cmds:
+      - git-chglog --next-tag=v0.1.0 --output CHANGELOG.md

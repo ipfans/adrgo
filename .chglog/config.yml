@@ -13,6 +13,7 @@ options:
         - refactor
         - docs
         - test
+        - chore
         - misc
   commit_groups:
     title_maps:
@@ -22,6 +23,7 @@ options:
       refactor: Code Refactoring
       docs: Documentation
       test: Unit Tests
+      chore: Chore
       misc: Miscellaneous
   header:
     pattern: "^(\\w*)\\:\\s(.*)$"
