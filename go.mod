@@ -10,7 +10,7 @@ require (
 	github.com/yuin/goldmark v1.4.4
 	github.com/yuin/goldmark-emoji v1.0.1
 	github.com/yuin/goldmark-highlighting v0.0.0-20210516132338-9216f9c5aa01
-	golang.org/x/text v0.3.6
+	golang.org/x/text v0.3.8
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
 )
 
